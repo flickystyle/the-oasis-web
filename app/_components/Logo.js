@@ -9,9 +9,10 @@ function Logo() {
                 height="60"
                 width="80"
                 alt="The Wild Oasis logo"
+                priority
             />
             <span className="text-xl font-semibold text-primary-100">
-                The Wild Oasis
+                The Oasis
             </span>
         </Link>
     );

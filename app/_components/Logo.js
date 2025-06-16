@@ -10,7 +10,7 @@ function Logo() {
                 width="80"
                 alt="The Wild Oasis logo"
                 priority
-                className="scale-x-95"
+                className="scale-x-95 w-auto"
             />
 
             <span className="text-xl font-semibold text-primary-100">

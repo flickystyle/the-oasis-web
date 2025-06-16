@@ -6,14 +6,14 @@ function CabinCard({ cabin }) {
     const { id, name, maxCapacity, regularPrice, discount, image } = cabin;
 
     return (
-        <div className="flex border-primary-800 border rounded-2xl">
+        <div className="flex border-primary-800 border-2 rounded-2xl">
             <div className="flex-1 relative">
                 <Image
                     fill
                     src={image}
                     alt={`Cabin ${name}`}
                     className="object-cover border-r border-primary-800 rounded-2xl"
-                    sizes="100vw"
+                    sizes="50vw"
                     quality={80}
                 />
             </div>
@@ -55,7 +55,7 @@ function CabinCard({ cabin }) {
                 <div className="bg-primary-950 border-t border-t-primary-800 text-right rounded-br-2xl">
                     <Link
                         href={`/cabins/${id}`}
-                        className="border-l border-primary-800 py-4 px-6 inline-block hover:bg-accent-600 transition-all hover:text-primary-900"
+                        className="border-l border-primary-800 py-4 px-6 inline-block hover:bg-accent-600 transition-all hover:text-primary-900 hover:rounded-br-2xl"
                     >
                         Details & reservation &rarr;
                     </Link>

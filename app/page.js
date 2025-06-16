@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import bg from '@/public/bg.png';
+
 export default function Page() {
     return (
         <main className="mt-24">
@@ -9,13 +10,13 @@ export default function Page() {
                 fill
                 placeholder="blur"
                 quality={80}
-                className="object-cover object-bottom opacity-60"
-                alt="Mountains and forests with two cabins"
+                className="object-cover object-bottom opacity-50"
+                alt="Mountains and forests with cabins"
             />
 
             <div className="relative z-10 text-center">
                 <h1 className="text-8xl text-primary-50 mb-10 tracking-tight font-normal">
-                    Welcome to paradise.
+                    Welcome.
                 </h1>
                 <Link
                     href="/cabins"

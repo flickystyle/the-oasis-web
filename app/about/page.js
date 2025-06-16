@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import about1 from '@/public/about-1.jpg';
+import about1 from '@/public/about-1.png';
 
 export const metadata = {
     title: 'About',
@@ -42,7 +42,7 @@ export default function Page() {
             <div className="col-span-2">
                 <Image
                     src={about1}
-                    className="rounded-2xl"
+                    className="rounded-2xl object-cover"
                     alt="Family sitting around a fire pit in front of cabin"
                     placeholder="blur"
                     quality={80}
@@ -52,7 +52,8 @@ export default function Page() {
             <div className="relative aspect-square col-span-2">
                 <Image
                     fill
-                    src="/about-2.jpg"
+                    src="/about-2.png"
+                    sizes="100vh"
                     className="rounded-2xl object-cover"
                     alt="Family that manages The Oasis"
                     placeholder="blur"

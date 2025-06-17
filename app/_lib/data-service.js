@@ -49,6 +49,7 @@ export const getCabins = async function () {
     return data;
 };
 
+
 export async function getGuest(email) {
     const { data, error } = await supabase
         .from('guests')
@@ -165,7 +166,6 @@ export async function createBooking(newBooking) {
     const { data, error } = await supabase
         .from('bookings')
         .insert([newBooking])
-        // So that the newly created object gets returned!
         .select()
         .single();
 

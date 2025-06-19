@@ -1,9 +1,11 @@
+'use client';
+
 function ReservationForm({ cabin }) {
     // CHANGE
     const { maxCapacity } = cabin;
 
     return (
-        <div className="scale-[1]">
+        <div className="scale-[1] border-l border-primary-800">
             <div className="bg-primary-800 text-primary-300 px-16 py-2 flex justify-between items-center rounded-tr-2xl">
                 <p>Logged in as</p>
 

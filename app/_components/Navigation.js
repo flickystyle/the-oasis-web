@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default async function Navigation() {
     const session = await auth();
-    console.log(session);
+
     return (
         <nav className="z-10 text-xl">
             <ul className="flex gap-16 items-center">
@@ -35,7 +35,7 @@ export default async function Navigation() {
                                 width="32"
                                 height="32"
                                 alt="user avatar"
-                                className="h-8 rounded-full"
+                                className="h-8 rounded-full -translate-y-0.5"
                                 referrerPolicy="no-referrer"
                             />
                             <span>{session.user.name}</span>

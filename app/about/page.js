@@ -46,9 +46,10 @@ export default async function Page() {
                 </div>
             </div>
 
-            <div className="col-span-2">
+            <div className="col-span-2 relative  aspect-square">
                 <Image
                     src={about1}
+                    fill
                     className="rounded-2xl object-cover"
                     alt="Family sitting around a fire pit in front of cabin"
                     placeholder="blur"

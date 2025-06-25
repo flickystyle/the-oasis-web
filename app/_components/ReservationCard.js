@@ -30,6 +30,7 @@ function ReservationCard({ booking }) {
                     src={image}
                     alt={`Cabin ${name}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover border-r border-primary-800 rounded-l-2xl"
                 />
             </div>

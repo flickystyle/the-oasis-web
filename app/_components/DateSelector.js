@@ -28,21 +28,27 @@ function DateSelector({ settings, cabin, bookedDates }) {
     const { minBookingLength, maxBookingLength } = settings;
     const numNights = differenceInDays(displayRange.to, displayRange.from);
     const cabinPrice = numNights * (regularPrice - discount);
+    const startMonth = new Date();
+    const endMonth = new Date();
 
     return (
-        <div className="flex flex-col justify-between ">
+        <div className="flex flex-col">
             <DayPicker
-                className="pt-12 place-self-center"
+                className="pt-12 place-self-center-safe -translate-y-6"
                 mode="range"
                 selected={displayRange}
                 onSelect={setRange}
                 min={minBookingLength + 1}
                 max={maxBookingLength}
-                fromMonth={new Date()}
-                fromDate={new Date()}
-                toYear={new Date().getFullYear() + 5}
+                startMonth={startMonth}
+                endMonth={
+                    new Date(
+                        startMonth.getFullYear() + 1,
+                        startMonth.getMonth() + 1
+                    )
+                }
                 captionLayout="dropdown"
-                numberOfMonths={2}
+                numberOfMonths={1}
                 disabled={(curDate) =>
                     isPast(curDate) ||
                     bookedDates.some((date) => isSameDay(date, curDate))

@@ -3,3 +3,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 [the-oasis-websie](https://the-oasis-web-demo.vercel.app/)
+
+
+Стек: Next.js, React, TypeScript, Tailwind, NextAuth, Supabase, date-fns
+
+— Разработал клиентскую часть сайта с каталогом номеров и системой бронирования
+
+— Настроил авторизацию через Google с помощью NextAuth
+
+— Реализовал поиск и фильтрацию доступных номеров по дате
+
+— Работал с SSR и оптимизацией скорости загрузки страниц

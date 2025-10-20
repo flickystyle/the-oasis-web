@@ -1,16 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Oasis — Сайт бронирования отеля
 
-## Getting Started
+## 🚀 Getting Started
 
-[the-oasis-websie](https://the-oasis-web-demo.vercel.app/)
+**Репозиторий:** `the-oasis-website`
+*Versel: [the-oasis-websie](https://the-oasis-web-demo.vercel.app/)
+---
 
+##  Технологический стек
 
-Стек: Next.js, React, TypeScript, Tailwind, NextAuth, Supabase, date-fns
+* **Next.js** — серверный рендеринг (SSR) и маршрутизация
+* **React** — компоненты пользовательского интерфейса
+* **TypeScript** — типобезопасность и надёжность кода
+* **Tailwind CSS** — быстрая и гибкая стилизация
+* **NextAuth** — авторизация и аутентификация (Google OAuth)
+* **Supabase** — база данных, API и хранение
+* **date-fns** — работа с датами и временем
 
-— Разработал клиентскую часть сайта с каталогом номеров и системой бронирования
+---
 
-— Настроил авторизацию через Google с помощью NextAuth
+## Основные достижения
 
-— Реализовал поиск и фильтрацию доступных номеров по дате
+* Разработал **клиентскую часть сайта** с каталогом номеров и системой бронирования
+* Настроил **авторизацию через Google** с помощью NextAuth
+* Реализовал **поиск и фильтрацию доступных номеров по дате**
+* Оптимизировал **скорость загрузки страниц** и использовал **SSR** для повышения SEO и UX
 
-— Работал с SSR и оптимизацией скорости загрузки страниц
+---
